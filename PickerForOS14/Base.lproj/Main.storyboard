@@ -16,36 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-eI-VX9">
-                                <rect key="frame" x="70" y="340" width="274" height="216"/>
-                                <connections>
-                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QUL-TE-Dmj"/>
-                                </connections>
-                            </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-Xy-ewc">
-                                <rect key="frame" x="29" y="144" width="357" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-Xy-ewc">
+                                <rect key="frame" x="29" y="367" width="357" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dht-nU-9TL">
-                                <rect key="frame" x="83" y="594" width="248" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="u1w-Xy-ewc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="BD1-42-ekx"/>
-                            <constraint firstItem="gYk-eI-VX9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Srv-mV-itL"/>
-                            <constraint firstItem="gYk-eI-VX9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-70" id="boq-FM-j1G"/>
-                            <constraint firstItem="u1w-Xy-ewc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dtH-0W-tkf"/>
-                            <constraint firstItem="gYk-eI-VX9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f0S-xr-aIJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u1w-Xy-ewc" secondAttribute="trailing" constant="28" id="hEO-gc-cWC"/>
-                            <constraint firstItem="gYk-eI-VX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nGk-Uc-UL1"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="dht-nU-9TL" id="ZFr-ZO-XWK"/>
@@ -55,7 +34,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.028985507246382" y="93.75"/>
+            <point key="canvasLocation" x="-513" y="71"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5oH-bL-mUe">
+            <objects>
+                <viewController id="qWt-b9-svg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ke-fF-a9b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dht-nU-9TL">
+                                <rect key="frame" x="166" y="330" width="248" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-eI-VX9">
+                                <rect key="frame" x="47" y="468" width="320" height="216"/>
+                                <connections>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QUL-TE-Dmj"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jzr-xD-V2l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gYk-eI-VX9" firstAttribute="centerX" secondItem="8Ke-fF-a9b" secondAttribute="centerX" id="nfp-Dq-juH"/>
+                            <constraint firstItem="gYk-eI-VX9" firstAttribute="centerY" secondItem="8Ke-fF-a9b" secondAttribute="centerY" constant="128" id="thu-7s-rxB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q50-it-D0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="106"/>
         </scene>
     </scenes>
     <resources>
