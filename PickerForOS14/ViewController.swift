@@ -25,8 +25,9 @@ class ViewController: UIViewController {
     }
     
     private func setup() {
-//        datePicker.preferredDatePickerStyle = .wheels
-//        datePicker.datePickerMode = .time
+//        datePicker.preferredDatePickerStyle = .inline
+//        datePicker.datePickerMode = .dateAndTime
+//        datePicker.datePickerMode = .
 //        datePicker.datePickerMode = .date
 //        datePicker.datePickerMode = .dateAndTime
 //        datePicker.datePickerMode = .time
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
 //        textField.inputView = textFieldInputDatePicker
         /// これはTextField選択時のモードを選択できる。
         textFieldInputDatePicker.preferredDatePickerStyle = .wheels
+        textFieldInputDatePicker.datePickerMode = .date
+
         
        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 40))
        let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -53,7 +56,7 @@ class ViewController: UIViewController {
     
     @objc func done() {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy年MM月dd日"
+        formatter.dateFormat = "yyyy-MM-dd"
         textField.text = "\(formatter.string(from: textFieldInputDatePicker.date))"
     }
 }
