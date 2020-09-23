@@ -16,28 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-eI-VX9">
-                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-eI-VX9">
+                                <rect key="frame" x="70" y="340" width="274" height="216"/>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-Xy-ewc">
-                                <rect key="frame" x="29" y="231" width="357" height="34"/>
+                                <rect key="frame" x="29" y="144" width="357" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dht-nU-9TL">
+                                <rect key="frame" x="83" y="594" width="248" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="u1w-Xy-ewc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="BD1-42-ekx"/>
-                            <constraint firstItem="gYk-eI-VX9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Srv-mV-itL"/>
-                            <constraint firstItem="gYk-eI-VX9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="boq-FM-j1G"/>
-                            <constraint firstItem="u1w-Xy-ewc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="dtH-0W-tkf"/>
+                            <constraint firstItem="gYk-eI-VX9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Srv-mV-itL"/>
+                            <constraint firstItem="gYk-eI-VX9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-70" id="boq-FM-j1G"/>
+                            <constraint firstItem="u1w-Xy-ewc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dtH-0W-tkf"/>
                             <constraint firstItem="gYk-eI-VX9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f0S-xr-aIJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u1w-Xy-ewc" secondAttribute="trailing" constant="28" id="hEO-gc-cWC"/>
                             <constraint firstItem="gYk-eI-VX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nGk-Uc-UL1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateLabel" destination="dht-nU-9TL" id="ZFr-ZO-XWK"/>
                         <outlet property="datePicker" destination="gYk-eI-VX9" id="IEf-e5-tFo"/>
                         <outlet property="textField" destination="u1w-Xy-ewc" id="ri1-D1-AJi"/>
                     </connections>
