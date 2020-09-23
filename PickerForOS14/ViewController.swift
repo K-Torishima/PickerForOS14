@@ -10,6 +10,7 @@
 // TextFieldを使って日付を選択する時に使うやり方。
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
     
@@ -26,8 +27,6 @@ class ViewController: UIViewController {
     
     private func setup() {
         datePicker.preferredDatePickerStyle = .compact
-        dateLabel.text = "\(datePicker.date)"
-        
 //        datePicker.datePickerMode = .countDownTimer
 //        datePicker.datePickerMode = .date
 //        datePicker.datePickerMode = .dateAndTime
@@ -46,6 +45,12 @@ class ViewController: UIViewController {
         textField.inputView = textFieldInputDatePicker
 //        textField.inputAccessoryView = toolbar
     }
+    
+    @IBAction func dateChanged(_ sender: UIDatePicker) {
+        dateLabel.text = "\(datePicker.date)"
+        
+    }
+    
     
     @objc func done() {
            textField.endEditing(true)
