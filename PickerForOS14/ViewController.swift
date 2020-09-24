@@ -25,8 +25,8 @@ class ViewController: UIViewController {
     }
     
     private func setup() {
-//        datePicker.preferredDatePickerStyle = .inline
-//        datePicker.datePickerMode = .dateAndTime
+        datePicker.preferredDatePickerStyle = .compact
+        datePicker.datePickerMode = .dateAndTime
 //        datePicker.datePickerMode = .
 //        datePicker.datePickerMode = .date
 //        datePicker.datePickerMode = .dateAndTime
@@ -44,8 +44,8 @@ class ViewController: UIViewController {
         toolbar.setItems([spacelItem, doneItem], animated: true)
 
         // インプットビュー設定(紐づいているUITextfieldへ代入)
-        textField.inputView = textFieldInputDatePicker
-        textField.inputAccessoryView = toolbar
+//        textField.inputView = textFieldInputDatePicker
+//        textField.inputAccessoryView = toolbar
     }
     
     @IBAction func dateChanged(_ sender: UIDatePicker) {

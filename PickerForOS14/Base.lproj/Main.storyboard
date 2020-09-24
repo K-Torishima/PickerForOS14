@@ -16,48 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-Xy-ewc">
-                                <rect key="frame" x="29" y="431" width="357" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SMa-8A-fcb">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SMa-8A-fcb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WcQ-qw-5Wk"/>
+                            <constraint firstItem="SMa-8A-fcb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ccy-RR-ey4"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateLabel" destination="dht-nU-9TL" id="ZFr-ZO-XWK"/>
-                        <outlet property="textField" destination="u1w-Xy-ewc" id="ri1-D1-AJi"/>
+                        <outlet property="datePicker" destination="SMa-8A-fcb" id="cei-AW-k6b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-513.04347826086962" y="70.982142857142847"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5oH-bL-mUe">
-            <objects>
-                <viewController id="qWt-b9-svg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Ke-fF-a9b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dht-nU-9TL">
-                                <rect key="frame" x="166" y="330" width="248" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="jzr-xD-V2l"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q50-it-D0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="671" y="106"/>
         </scene>
     </scenes>
     <resources>
